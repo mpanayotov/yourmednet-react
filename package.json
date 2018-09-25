@@ -10,7 +10,7 @@
     "react-dom": "^16.5.2",
     "react-scripts": "1.1.5",
     "reflux": "^6.4.1",
-    "superagent": "^4.0.0-beta.5"
+    "superagent": "^3.8.3"
   },
   "scripts": {
     "build-css": "postcss src/assets/css/index.css -o src/index.css",
