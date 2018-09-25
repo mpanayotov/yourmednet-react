@@ -8,9 +8,13 @@ class MedCase extends React.Component {
       <div className="panel panel-default medcase">
         <div className="panel-heading">
           <div className="row">
-            <div className="col-sm-3 profile-holder" onClick={this.openUserProfile.bind(this)}>
-              <img className="img-circle" alt="" src={process.env.REACT_APP_URL + this.props.medcase.author.picture.url} />
-              <span className="author">{this.props.medcase.author.name}</span>
+            <div className={"col-sm-3 " + this.pointerClass()} onClick={this.openUserProfile.bind(this)}>
+              <div className="holder-left">
+                <img className="img-circle" alt="" src={process.env.REACT_APP_URL + this.props.medcase.author.picture.url} />
+              </div>
+              <div className="holder-right">
+                <span className="author">{this.props.medcase.author.name}</span>
+              </div>
             </div>
             <div className="col-sm-9">
               <span onClick={this.showCase.bind(this)} className="title">{this.props.medcase.title}</span>
@@ -29,6 +33,10 @@ class MedCase extends React.Component {
     );
   }
 
+  pointerClass() {
+    return this.props.medcase.author.anonymous ? '' : 'profile-holder';
+  }
+
   renderAttachedDocument() {
     if(this.props.medcase.documents.length > 0)
       return (<img className="pull-left" width="150px" alt="" src={process.env.REACT_APP_URL + this.props.medcase.documents[0].document.url} />);
@@ -36,6 +44,9 @@ class MedCase extends React.Component {
   }
 
   openUserProfile () {
+    if(this.props.medcase.author.anonymous)
+      return;
+
     request.get(process.env.REACT_APP_API + 'profiles/' + this.props.medcase.author.id)
       .set('Authentication-token', window.localStorage.getItem('auth_token'))
       .then(res => {

@@ -529,3 +529,14 @@ small.text-muted {
 .specialty {
   font-size: 17px;
 }
+
+.holder-left {
+  float:left;
+  width: 30%;
+}
+.holder-right {
+  float:left;
+  width: 70%;
+  padding-left:5px;
+  margin-top:20px;
+}
