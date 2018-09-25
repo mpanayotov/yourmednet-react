@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<meta charset="utf-8">
+	<title>YourMedNet</title>
+	<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="box">
+			<div class="row row-offcanvas row-offcanvas-left">
+				<!-- sidebar -->
+				<div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
+					<ul class="nav">
+						<li>
+							<a class="visible-xs text-center" data-toggle="offcanvas" href="#"><i class="glyphicon glyphicon-chevron-right"></i></a>
+						</li>
+					</ul>
+					<ul class="nav hidden-xs" id="profile">
+					</ul>
+				</div><!-- /sidebar -->
+				<!-- main right col -->
+				<div class="column col-sm-10 col-xs-11" id="main">
+					<!-- top nav -->
+					<div class="navbar navbar-blue navbar-static-top">
+						<div class="navbar-header">
+							<button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"><span class="sr-only">Toggle</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+						</div>
+						<nav class="collapse navbar-collapse" role="navigation">
+							<div class="navbar-form navbar-left" id="searchBox">
+							</div>
+							<ul class="nav navbar-nav">
+								<li>
+									<a data-toggle="modal" href="#createCase" role="button"><i class="glyphicon glyphicon-plus"></i> Публикувай случай</a>
+								</li>
+							</ul>
+						</nav>
+					</div><!-- /top nav -->
+					<div class="padding">
+						<div class="full col-sm-9">
+							<!-- content -->
+							<div class="row">
+								<!-- main col right -->
+								<div class="col-sm-9" id="medFeed">
+								</div>
+							</div><!--/row-->
+						</div><!-- /col-9 -->
+					</div><!-- /padding -->
+				</div><!-- /main -->
+			</div>
+		</div>
+	</div><!--post modal-->
+  <div id="createCase" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+	</div>
+	<div id="medCases">
+	</div>
+	<div id="myProfile" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="row"><button type="button" class="close block-d" data-dismiss="modal" aria-hidden="true">X</button></div>
+					<div class="modal-body row">
+							<div class="col-sm-12" id="editProfile">
+							</div>
+					</div>
+				</div>
+			</div>
+	</div>
+  <div id="userProfile" class="modal fade" tabindex="-2" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+				<div class='row'><button type="button" class="close block-d" data-dismiss="modal" aria-hidden="true">X</button></div>
+        <div class="modal-body row">
+            <div class="col-sm-12">
+              <div class="col-sm-4">
+                <img class="profile-picture" src="" width="300px" height="300px" />
+                <div class="name"></div>
+                <div class="lbl">Специалност: </div>
+								<div class="specialty"></div>
+								<div class="lbl">Град: </div>
+                <div class="city"></div>
+                <div class="lbl">Работно място: </div>
+								<div class="workplace"></div>
+                <div class="lbl">Публикувани случаи: </div>
+                <div class="cases"><i class="glyphicon glyphicon-flag"></i><span></span></div>
+                <div class="lbl">Отговори:</div>
+                <div class="answers"><i class="glyphicon glyphicon-ok"></i><span></span></div>
+							</div>
+							<div class="lbl">Биография:</div>
+              <div class="col-sm-8 biography">
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+	</div>
+</body>
+</html>

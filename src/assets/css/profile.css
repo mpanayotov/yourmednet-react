@@ -1,0 +1,140 @@
+/* custom template */
+html, body {
+    height: 100%;
+    font-family:verdana,arial,sans-serif;
+    color:#555555;
+ }
+ 
+ .nav {
+    font-family:Arial,sans-serif;
+    font-size:13px;
+ }
+ 
+ a {
+   color:#222222;
+ }
+ 
+ a:hover {
+   text-decoration:none;
+ }
+ 
+ hr {
+   border-color:#dedede;
+ }
+ 
+ .wrapper, .row {
+    height: 100%;
+    margin-left:0;
+    margin-right:0;
+ }
+ 
+ .wrapper:before, .wrapper:after,
+ .column:before, .column:after {
+     content: "";
+     display: table;
+ }
+ 
+ .wrapper:after,
+ .column:after {
+     clear: both;
+ }
+ 
+ .column {
+     height: 100%;
+     overflow: auto;
+     *zoom:1;
+ }
+ 
+ .column .padding {
+     padding: 20px;
+ }
+ 
+ .full{
+     padding-top:70px;
+ }
+ 
+ .box {
+    bottom: 0; /* increase for footer use */
+     left: 0;
+     position: absolute;
+     right: 0;
+     top: 0;
+ }
+ 
+ .divider {
+     margin-top:32px;
+ }
+ 
+ .navbar-blue {
+     border-width:0;
+     background-color:#3B5999;
+     color:#ffffff;
+     font-family:arial,sans-serif;
+     top:0;
+     position:fixed;
+     width:inherit;
+ }
+ 
+ .navbar-blue li > a,.navbar-toggle  {
+    color:#efefef;
+ }
+ 
+ .navbar-blue .dropdown-menu li a {color:#2A4888;}
+ .navbar-blue .dropdown-menu li > a {padding-left:30px;}
+ 
+ .navbar-blue li>a:hover, .navbar-blue li>a:focus, .navbar-blue .open, .navbar-blue .open>a, .navbar-blue .open>a:hover, .navbar-blue .open>a:focus {
+    background-color:#2A4888;
+    color:#fff;
+ }
+ 
+ #main {
+    background-color:#e9eaed;
+    padding-left:0;
+    padding-right:0;
+ }
+ 
+#profile-wrapper {
+    display: block;
+    margin: 0 auto;
+    float: none;
+}
+
+#profile-wrapper .lbl {
+    font-size: 18px;
+    margin-left: 15%;
+}
+
+.biography-wrapper {
+    padding-top: 50px;
+
+    .lbl {
+        margin-left: 0px !important;
+    }
+}
+
+.biography {
+    font-size: 16px;
+    color: #332626;
+    padding: 20px;
+}
+
+.profile-picture, .name, .specialty, .workplace, .cases, .answers {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 25px;
+    color: black;
+ }
+
+ .cases, .answers {
+    color: blue;
+
+    span {
+      margin-left:10px;
+    }
+ }
+
+ .cases .glyphicon, .answers .glyphicon {
+     color: green;
+ }

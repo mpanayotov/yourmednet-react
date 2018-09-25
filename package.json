@@ -1,0 +1,29 @@
+{
+  "name": "yourmednet-react",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "jquery": "^3.3.1",
+    "npm-run-all": "^4.1.3",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "react-scripts": "1.1.5",
+    "reflux": "^6.4.1",
+    "superagent": "^4.0.0-beta.5"
+  },
+  "scripts": {
+    "build-css": "postcss src/assets/css/index.css -o src/index.css",
+    "watch-css": "postcss src/assets/css/index.css -o src/index.css -w",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "postcss-cli": "^6.0.0",
+    "postcss-nested": "^4.1.0"
+  }
+}
