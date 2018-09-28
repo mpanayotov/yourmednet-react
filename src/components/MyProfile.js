@@ -5,7 +5,7 @@ import ProfileActions from '../actions/ProfileActions';
 import logOut from '../utils/logout';
 import $ from 'jquery';
 
-class ShortProfile extends Reflux.Component {
+class MyProfile extends Reflux.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -41,4 +41,4 @@ class ShortProfile extends Reflux.Component {
   }
 }
 
-export default ShortProfile;
+export default MyProfile;

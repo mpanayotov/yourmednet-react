@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import MedFeed from './components/MedFeed';
 import CreateCaseBox from './components/CreateCaseBox';
-import ShortProfile from './components/ShortProfile';
+import MyProfile from './components/MyProfile';
 import EditProfile from './components/EditProfile';
 import SearchBox from './components/SearchBox';
 import MedCaseModalArray from './components/MedCaseModalArray';
@@ -14,7 +14,7 @@ window.jQuery = window.$ = $;
 require('bootstrap/dist/js/bootstrap.min.js');
 
 ReactDOM.render(
-  <ShortProfile />
+  <MyProfile />
   ,document.getElementById('profile'));
 
 ReactDOM.render(

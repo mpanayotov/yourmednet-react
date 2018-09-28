@@ -1,10 +1,9 @@
 import React from 'react';
-import Reflux from 'reflux';
 import request from 'superagent';
 import FeedActions from '../actions/FeedActions';
 import $ from 'jquery';
 
-class CreateCaseBox extends Reflux.Component {
+class CreateCaseBox extends React.Component {
   constructor(props) {
     super(props);
     this.state = { title: '', description: '', files: [] };

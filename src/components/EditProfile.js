@@ -29,7 +29,7 @@ class EditProfile extends Reflux.Component {
           <img src={process.env.REACT_APP_URL + this.state.picture.url} className='profile-picture' alt='' width="300px" height="300px"/>
           <div className="btn-picture">
             <label className="btn btn-default btn-file">
-                Browse <input type="file" accept="image/*" onChange={this.handleImageChange.bind(this)} />
+                Избери <input type="file" accept="image/*" onChange={this.handleImageChange.bind(this)} />
             </label>
           </div>
           <div className="name">
