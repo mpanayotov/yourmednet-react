@@ -37,7 +37,7 @@ class CreateCaseBox extends React.Component {
   }
 
   createCase() {
-    if (!this.state.title.trim() && !this.state.description.trim())
+    if (!this.state.title.trim())
       return
 
     var formData = new FormData();
@@ -59,7 +59,6 @@ class CreateCaseBox extends React.Component {
   }
 
   handleTitleChange(e) {
-    console.log(this.state.files);
     this.setState({title: e.target.value});
   }
 
